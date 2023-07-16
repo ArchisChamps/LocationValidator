@@ -1,4 +1,4 @@
-package com.hackearth.germin8;
+package com.archi.locval;
 
 import lombok.Data;
 
