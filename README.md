@@ -1,3 +1,13 @@
+# LOCATION VALIDATOR
+@author Archismito Choudhury<br/>
+@date 16-07-2023
+
+# OVERVIEW
+
+This is a Springboot application that scrapes the URL "https://www.shoppersstop.com/store-finder" and stores the locations in Database.
+Alongside this also verifies if the location is valid or not.
+
+
 ## DEPLOYMENT DETAILS
 
 - Make sure you have the Java 17.0 version installed
@@ -13,7 +23,7 @@
         API-> http://localhost:8080/location
         METHOD -> GET
 
-    This api will scrape the website and save the locations in the database. This is also validate if the location is correct or not.
+    This API will scrape the website and save the locations in the database. This is also validated if the location is correct or not.
     In the console, you can see the reason why the location is marked Invalid/Valid.
 
 
@@ -21,7 +31,7 @@
         API-> http://localhost:8080/location/invalid-locations
         METHOD -> GET
 
-    This api return the list of all the locations that are invalid.
+    This API return the list of all the locations that are invalid.
 
     Response ->
 
@@ -53,7 +63,7 @@
 
 - Location not found by Google Places API
 - Name does not match "Shoppers Stop"
-- Name does not contains the string "Shoppers Stop"
+- Name does not contain the string "Shoppers Stop"
 
 
 # Database setup
@@ -71,6 +81,14 @@ CREATE TABLE `location` (
   `is_deleted` TINYINT(1) DEFAULT '0',
   PRIMARY KEY (`pk_location_id`)
 )
+
+# Tech Stack 
+- Java 17
+- Springboot
+- Hibernate JPA
+- MySQL
+- Places API by Google
+- Jsoup for scraping website
 
 # Contact information
 
