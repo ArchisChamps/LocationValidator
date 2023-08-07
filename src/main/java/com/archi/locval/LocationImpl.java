@@ -73,7 +73,7 @@ public class LocationImpl implements LocationService {
     }
 
     public boolean checkIfValid(Location loc) {
-        String apiKey = "AIzaSyDwJLU4h5A_vzFDAvIesB1HBc7qzEMlN7g"; // Replace with your actual API key
+        String apiKey = "dummy_key"; // Replace with your actual API key
         boolean isValid = false;
         Double latitude = Double.valueOf(loc.getLatitude()); // Latitude of the location to check
         Double longitude = Double.valueOf(loc.getLongitude()); // Longitude of the location to check
